@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+div.container {
+    height: 300px;
+    border: 1px solid red;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+div.div {
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+}
+
+.div1,
+.div2,
+.div3 {
+    flex-grow: 0;
+   /* flex-shrink: 2; para usar este tire o flex-wrap
+   flex: define grow, basis e shirnk*/
+}
+
+
+.div1 {
+    background-color: rgb(245, 226, 15);
+    order: 2;
+    align-self: self-end;
+}
+
+.div2 {
+    background-color: rgb(241, 137, 18);
+    order: 3;
+}
+
+.div3 {
+    background-color: rgb(55, 205, 235);
+    order: 1;
+    flex-basis: 200px;
+}
